@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B718ED35-6281-4873-9234-6786D6A93D81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>School_Student_FrontPage</RootNamespace>
+    <AssemblyName>School_Student_FrontPage</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Configuration.ConfigurationBuilders.Base, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Configuration.ConfigurationBuilders.Base.3.0.0\lib\Net471\Microsoft.Configuration.ConfigurationBuilders.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Configuration.ConfigurationBuilders.UserSecrets, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.3.0.0\lib\Net471\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accountancy, Business, and Management %28ABM%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accountancy, Business, and Management %28ABM%29.Designer.cs">
+      <DependentUpon>Accountancy, Business, and Management %28ABM%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDO.Designer.cs">
+      <DependentUpon>BDO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDOConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDOConfirmation.Designer.cs">
+      <DependentUpon>BDOConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDOInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDOInformation.Designer.cs">
+      <DependentUpon>BDOInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BSCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BSCS.Designer.cs">
+      <DependentUpon>BSCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BSIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BSIS.Designer.cs">
+      <DependentUpon>BSIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus.Designer.cs">
+      <DependentUpon>Campus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BSIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BSIT.Designer.cs">
+      <DependentUpon>BSIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GCash.Designer.cs">
+      <DependentUpon>GCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCashConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GCashConfirmation.Designer.cs">
+      <DependentUpon>GCashConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCashInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GCashInformation.Designer.cs">
+      <DependentUpon>GCashInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Student_Application_Information.cs" />
+    <Compile Include="EnrollPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollPage1.Designer.cs">
+      <DependentUpon>EnrollPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollPage2.Designer.cs">
+      <DependentUpon>EnrollPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollPage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollPage3.Designer.cs">
+      <DependentUpon>EnrollPage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollPage4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollPage4.Designer.cs">
+      <DependentUpon>EnrollPage4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralAcademic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralAcademic.Designer.cs">
+      <DependentUpon>GeneralAcademic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HUMSS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HUMSS.Designer.cs">
+      <DependentUpon>HUMSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlinePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlinePayment.Designer.cs">
+      <DependentUpon>OnlinePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTCConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTCConfirmation.Designer.cs">
+      <DependentUpon>OTCConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTCInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTCInvoice.Designer.cs">
+      <DependentUpon>OTCInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverTheCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverTheCounter.Designer.cs">
+      <DependentUpon>OverTheCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentService.Designer.cs">
+      <DependentUpon>PaymentService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program_System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program_System.Designer.cs">
+      <DependentUpon>Program_System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundedPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Life_at_STI_system.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Life_at_STI_system.Designer.cs">
+      <DependentUpon>Life_at_STI_system.cs</DependentUpon>
+    </Compile>
+    <Compile Include="school_Student_FrontPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="school_Student_FrontPage.Designer.cs">
+      <DependentUpon>school_Student_FrontPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="STEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STEM.Designer.cs">
+      <DependentUpon>STEM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accountancy, Business, and Management %28ABM%29.resx">
+      <DependentUpon>Accountancy, Business, and Management %28ABM%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDO.resx">
+      <DependentUpon>BDO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDOConfirmation.resx">
+      <DependentUpon>BDOConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDOInformation.resx">
+      <DependentUpon>BDOInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BSCS.resx">
+      <DependentUpon>BSCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BSIS.resx">
+      <DependentUpon>BSIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus.resx">
+      <DependentUpon>Campus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BSIT.resx">
+      <DependentUpon>BSIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollPage1.resx">
+      <DependentUpon>EnrollPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollPage2.resx">
+      <DependentUpon>EnrollPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollPage3.resx">
+      <DependentUpon>EnrollPage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollPage4.resx">
+      <DependentUpon>EnrollPage4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCash.resx">
+      <DependentUpon>GCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCashConfirmation.resx">
+      <DependentUpon>GCashConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCashInformation.resx">
+      <DependentUpon>GCashInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralAcademic.resx">
+      <DependentUpon>GeneralAcademic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HUMSS.resx">
+      <DependentUpon>HUMSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Life_at_STI_system.resx">
+      <DependentUpon>Life_at_STI_system.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlinePayment.resx">
+      <DependentUpon>OnlinePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTCConfirmation.resx">
+      <DependentUpon>OTCConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTCInvoice.resx">
+      <DependentUpon>OTCInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverTheCounter.resx">
+      <DependentUpon>OverTheCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentService.resx">
+      <DependentUpon>PaymentService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program_System.resx">
+      <DependentUpon>Program_System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="school_Student_FrontPage.resx">
+      <DependentUpon>school_Student_FrontPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="STEM.resx">
+      <DependentUpon>STEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A6303270.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A6303270 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A6303253.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bldg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bldg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bscs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\night_mode.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
