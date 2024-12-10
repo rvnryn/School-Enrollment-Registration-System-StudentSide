@@ -48,6 +48,7 @@ namespace School_Student_FrontPage
             Lbl_Student_Address.Text = New_Student.Student_CurrentAddress ?? "Not provided";
             lblEmail.Text = New_Student.Student_EmailAddress ?? "Not provided";
             LblBirth.Text = New_Student.Student_DateOfBirth ?? "Not provided";
+            LblPlaceOfBirth.Text = New_Student.Student_BirthPlace ?? "Not provided";
             lblReligion.Text = New_Student.Student_Religion ?? "Not provided";
             lblCitizenship.Text = New_Student.Student_Citizenship ?? "Not provided";
             lblGender.Text = New_Student.Student_Gender ?? "Not provided";
